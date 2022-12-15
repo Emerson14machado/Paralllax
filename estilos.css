@@ -1,0 +1,58 @@
+body,
+html {
+    margin:0 ;
+    padding:0 ;
+}
+
+.wrapper {
+    height: 700px;
+    overflow-x: hidden;
+    perspective: 100vh;
+    transform-style:preserve-3d;
+}
+
+.secao {
+    margin: 50px;
+    position: relative;
+    height: 100vh;
+    min-height: 700px;
+    transform-style:inherit;
+}
+
+.secao::before {
+    content: " ";
+    position:absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -10;
+    background-size: cover;
+    background-repeat:no-repeat ;
+    background-position: center center ;
+    transform: translateZ(-1px) scale(1.5)
+}
+
+.conteudo {
+    position: absolute;
+    width: 80%;
+    top:25% ;
+    padding:20px ;
+    background-color: rgb(2, 188, 245);
+    color: black;
+    box-shadow: 3px 3px 3px aquamarine;
+}
+
+.fundo1::before{
+    background-image: url(/img/img2.png);
+}
+
+.fundo2::before{
+    background-image: url(/img/img54.jfif);
+}
+
+.fx{
+    width: 800px;
+    height:600px;
+
+}

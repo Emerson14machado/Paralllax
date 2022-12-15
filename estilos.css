@@ -44,11 +44,11 @@ html {
 }
 
 .fundo1::before{
-    background-image: url(/img/img2.png);
+    background-image: url(img/img2.png);
 }
 
 .fundo2::before{
-    background-image: url(/img/img54.jfif);
+    background-image: url(img/img54.jfif);
 }
 
 .fx{
